@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     
     # installed apps
     'booking',
+    'payments',
 ]
 
 GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = 'findmyplug/credentials.json'

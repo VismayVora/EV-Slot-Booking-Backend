@@ -1,4 +1,4 @@
-import datetime
+import datetime,requests,json
 from rest_framework.generics import GenericAPIView
 from rest_framework import status,permissions,viewsets
 from django.contrib.auth import authenticate,login
@@ -13,6 +13,10 @@ from rest_framework.response import Response
 
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
+import razorpay,environ
+
+env = environ.Env()
+environ.Env.read_env()
 
 class RegisterAPI(GenericAPIView):
 	
