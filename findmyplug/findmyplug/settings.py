@@ -52,8 +52,7 @@ INSTALLED_APPS = [
     'payments',
 ]
 
-
-GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = env('GOOGLE_APPLICATION_CREDENTIALS')
+GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -18,4 +18,4 @@ venv.bak/
 # VS Code settings
 .vscode
 .idea
-findmyplug/findmyplug/credentials.json
+findmyplug/google-credentials.json

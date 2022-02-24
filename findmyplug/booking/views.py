@@ -86,7 +86,6 @@ class SlotAPI(GenericAPIView):
 		serializer = PlugSerializer(plugs, many=True)
 		return Response(serializer.data)
 
-	#Returns available slots
 	def post(self,request):
 		date = self.request.data['date']
 		duration = int(self.request.data['duration'])
