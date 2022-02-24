@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'payments',
 ]
 
-GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = 'findmyplug/credentials.json'
+
+GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = env('GOOGLE_APPLICATION_CREDENTIALS')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

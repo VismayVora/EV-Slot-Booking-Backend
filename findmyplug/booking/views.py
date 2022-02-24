@@ -85,7 +85,8 @@ class SlotAPI(GenericAPIView):
 		plugs = Plug.objects.filter(charger_type = vehicle.plug_type, station_name = int(station_id))
 		serializer = PlugSerializer(plugs, many=True)
 		return Response(serializer.data)
-	
+
+	#Returns available slots
 	def post(self,request):
 		date = self.request.data['date']
 		duration = int(self.request.data['duration'])
